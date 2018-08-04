@@ -10,41 +10,41 @@ public class Parameter {
     /**
      * 参数w
      */
-    private int w1;
-    private int w2;
+    private double w1;
+    private double w2;
 
     /**
      * 参数b
      */
-    private int b;
+    private double b;
 
-    public Parameter(int w1, int w2, int b) {
+    public Parameter(double w1, double w2, double b) {
         this.w1 = w1;
         this.w2 = w2;
         this.b = b;
     }
 
-    public int getW1() {
+    public double getW1() {
         return w1;
     }
 
-    public void setW1(int w1) {
+    public void setW1(double w1) {
         this.w1 = w1;
     }
 
-    public int getW2() {
+    public double getW2() {
         return w2;
     }
 
-    public void setW2(int w2) {
+    public void setW2(double w2) {
         this.w2 = w2;
     }
 
-    public int getB() {
+    public double getB() {
         return b;
     }
 
-    public void setB(int b) {
+    public void setB(double b) {
         this.b = b;
     }
 

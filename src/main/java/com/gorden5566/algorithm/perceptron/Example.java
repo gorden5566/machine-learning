@@ -10,29 +10,29 @@ public class Example {
     /**
      * 输入(为便于理解，使用两个变量表示输入向量)
      */
-    private int x1;
-    private int x2;
+    private double x1;
+    private double x2;
 
     /**
      * 输出(又叫做标记，1表示正样本，-1表示负样本)
      */
-    private int y;
+    private double y;
 
-    public Example(int x1, int x2, int y) {
+    public Example(double x1, double x2, double y) {
         this.x1 = x1;
         this.x2 = x2;
         this.y = y;
     }
 
-    public int getX1() {
+    public double getX1() {
         return x1;
     }
 
-    public int getX2() {
+    public double getX2() {
         return x2;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 

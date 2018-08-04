@@ -21,7 +21,7 @@ public class Perceptron {
         Parameter parameter = new Parameter(0, 0, 0);
 
         // 学习率
-        int eta = 1;
+        double eta = 1;
 
         int times = 0;
         for (int i = 0; i < 100; i++) {
@@ -60,10 +60,10 @@ public class Perceptron {
      * @param parameter
      * @return
      */
-    private static int calcDistance(Example example, Parameter parameter) {
+    private static double calcDistance(Example example, Parameter parameter) {
         // 计算wx(向量内积)
-        int wx = parameter.getW1() * example.getX1() + parameter.getW2() * example.getX2();
-        int distance = example.getY() * (wx + parameter.getB());
+        double wx = parameter.getW1() * example.getX1() + parameter.getW2() * example.getX2();
+        double distance = example.getY() * (wx + parameter.getB());
         return distance;
     }
 
@@ -74,10 +74,10 @@ public class Perceptron {
      * @param parameter
      * @param eta
      */
-    private static void updateParameters(Example example, Parameter parameter, int eta) {
+    private static void updateParameters(Example example, Parameter parameter, double eta) {
         // wi = wi + eta * y * xi
-        int w1 = parameter.getW1() + eta * example.getY() * example.getX1();
-        int w2 = parameter.getW2() + eta * example.getY() * example.getX2();
+        double w1 = parameter.getW1() + eta * example.getY() * example.getX1();
+        double w2 = parameter.getW2() + eta * example.getY() * example.getX2();
         parameter.setW1(w1);
         parameter.setW2(w2);
 
