@@ -92,9 +92,9 @@ public class Perceptron {
      */
     private static List<Example> getTrainingSet() {
         List<Example> trainingSet = new ArrayList<>();
-        Example example1 = new Example(3, 3, 1);
-        Example example2 = new Example(4, 3, 1);
-        Example example3 = new Example(1, 1, -1);
+        Example example1 = new Example("x1",3, 3, 1);
+        Example example2 = new Example("x2",4, 3, 1);
+        Example example3 = new Example("x3",1, 1, -1);
         trainingSet.add(example1);
         trainingSet.add(example2);
         trainingSet.add(example3);

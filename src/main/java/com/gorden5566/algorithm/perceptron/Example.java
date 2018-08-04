@@ -8,6 +8,11 @@ package com.gorden5566.algorithm.perceptron;
  */
 public class Example {
     /**
+     * 样本点名字
+     */
+    private String name;
+
+    /**
      * 输入(为便于理解，使用两个变量表示输入向量)
      */
     private double x1;
@@ -18,7 +23,8 @@ public class Example {
      */
     private double y;
 
-    public Example(double x1, double x2, double y) {
+    public Example(String name, double x1, double x2, double y) {
+        this.name = name;
         this.x1 = x1;
         this.x2 = x2;
         this.y = y;
@@ -39,7 +45,8 @@ public class Example {
     @Override
     public String toString() {
         return "Example{" +
-            "x1=" + x1 +
+            "name='" + name + '\'' +
+            ", x1=" + x1 +
             ", x2=" + x2 +
             ", y=" + y +
             '}';
